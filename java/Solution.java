@@ -1,3 +1,4 @@
+import java.io.Console;
 import java.util.ArrayList;
 import java.util.Arrays;
 import java.util.List;
@@ -85,6 +86,7 @@ public class Solution {
     }
     
     public ListNode deleteDuplicates(ListNode head) {
+        if (head == null) return null;
         ListNode current = head;
         while (current.next != null){
             if(current.next.val == current.val)
@@ -93,5 +95,12 @@ public class Solution {
                 current = current.next;
         }
         return head;
+    }
+
+    public String convertToTitle(int columnNumber) {
+        if (columnNumber <= 0) return "";
+        int index = columnNumber > 26?columnNumber%26:columnNumber;
+        index = index==0?26:index;
+        return convertToTitle((int)Math.ceil((columnNumber-26d)/26d)) + ((char)(index+64))+"";
     }
 }
