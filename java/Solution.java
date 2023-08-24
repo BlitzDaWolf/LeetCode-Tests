@@ -74,4 +74,24 @@ public class Solution {
         }
         return digits;
     }
+
+    public int mySqrt(int x) {
+        double i =0;
+        while(i*i<=x){
+            if((i*i <= x && (i+1)*(i+1)>x)) return (int)i;
+            i++;
+        }
+        return 0;
+    }
+    
+    public ListNode deleteDuplicates(ListNode head) {
+        ListNode current = head;
+        while (current.next != null){
+            if(current.next.val == current.val)
+                current.next = current.next.next;
+            else
+                current = current.next;
+        }
+        return head;
+    }
 }
