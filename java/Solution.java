@@ -108,4 +108,17 @@ public class Solution {
     public String toHex(int num) {
         return String.format("%01x", num);
     }
+
+    public List<String> fizzBuzz(int n) {
+        List<String> result = new ArrayList<String>();
+        for(int i = 1;i < n+1; i++){
+            String r = "";
+            r += i % 3 == 0 ? "Fizz": "";
+            r += i % 5 == 0 ? "Buzz": "";
+            if (r.isEmpty())
+                r = i+"";
+            result.add(r);
+        }
+        return result;
+    }
 }

@@ -5,6 +5,8 @@ public class main {
         int[] b = sln.plusOne(new int[]{4,3,2,1});        
         int[] c = sln.plusOne(new int[]{9});
 
+        sln.fizzBuzz(3);
+
         sln.convertToTitle(1);
         sln.convertToTitle(28);        
         sln.convertToTitle(701);
