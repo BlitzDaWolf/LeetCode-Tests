@@ -103,4 +103,9 @@ public class Solution {
         index = index==0?26:index;
         return convertToTitle((int)Math.ceil((columnNumber-26d)/26d)) + ((char)(index+64))+"";
     }
+
+    
+    public String toHex(int num) {
+        return String.format("%01x", num);
+    }
 }
