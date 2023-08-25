@@ -1,5 +1,8 @@
+import java.lang.reflect.Array;
 import java.util.ArrayList;
 import java.util.Arrays;
+import java.util.Collection;
+import java.util.Collections;
 import java.util.List;
 
 public class Solution {
@@ -237,5 +240,15 @@ public class Solution {
 
         current += frame !=-1 ? prices[tmp.length]-frame:0;
         return current;
+    }
+
+    public int findMin(int[] nums) {
+        int min = nums[0];
+        for(int i=0; i<nums.length; i++) { if(min > nums[i])
+            {
+               min = nums[i];
+            }
+        }
+        return min;
     }
 }
