@@ -29,6 +29,8 @@ public class main {
         sln.maxProfit(new int[]{1,2,3,4,5});
         sln.maxProfit(new int[]{2,1,2,0,1});
 
+        sln.findDuplicate(new int[]{1,3,4,2,2});
+
         System.out.println("Completed all the tests");
     }
 }

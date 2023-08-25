@@ -1,8 +1,6 @@
-import java.lang.reflect.Array;
 import java.util.ArrayList;
 import java.util.Arrays;
-import java.util.Collection;
-import java.util.Collections;
+import java.util.HashSet;
 import java.util.List;
 
 public class Solution {
@@ -250,5 +248,16 @@ public class Solution {
             }
         }
         return min;
+    }
+
+    public int findDuplicate(int[] nums) {
+        HashSet<Integer> result = new HashSet<>();
+        for(int i =0; i < nums.length; i++){
+            if (result.contains(nums[i])){
+                return nums[i];
+            }
+            result.add(nums[i]);
+        }
+        return 0;
     }
 }
