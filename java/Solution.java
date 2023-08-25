@@ -103,7 +103,6 @@ public class Solution {
         return convertToTitle((int)Math.ceil((columnNumber-26d)/26d)) + ((char)(index+64))+"";
     }
 
-    
     public String toHex(int num) {
         return String.format("%01x", num);
     }
@@ -210,6 +209,33 @@ public class Solution {
     }
 
     public int accountBalanceAfterPurchase(int purchaseAmount) {
-        return purchaseAmount - Math.round(purchaseAmount / 10f) * 10;
+        return 100 - Math.round(purchaseAmount / 10f) * 10;
+    }
+
+    public int maxProfit(int[] prices) {
+        boolean[] tmp = new boolean[prices.length-1];
+        for (int i =0; i < tmp.length; i++){
+            tmp[i] = prices[i+1] > prices[i];
+        }
+
+        int current=0;
+        int frame = -1;
+        for (int i =0; i < tmp.length; i++){
+            if (tmp[i]){
+                if (frame == -1){
+                    frame = prices[i];
+                }
+            }
+            else{
+                if (frame != -1){
+                    current += prices[i]-frame;
+                    frame = -1;
+                }
+            }
+        }
+
+
+        current += frame !=-1 ? prices[tmp.length]-frame:0;
+        return current;
     }
 }

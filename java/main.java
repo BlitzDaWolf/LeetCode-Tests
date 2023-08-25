@@ -25,6 +25,10 @@ public class main {
 
         sln.reverseWords("the sky is blue");
 
+        sln.maxProfit(new int[]{7,1,5,3,6,4});
+        sln.maxProfit(new int[]{1,2,3,4,5});
+        sln.maxProfit(new int[]{2,1,2,0,1});
+
         System.out.println("Completed all the tests");
     }
 }
