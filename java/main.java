@@ -12,6 +12,7 @@ import Solutions.maxProfitClass;
 import Solutions.mergeAlternatelyClass;
 import Solutions.mergeTwoListsClass;
 import Solutions.mySqrtClass;
+import Solutions.numComponentsClass;
 import Solutions.plusOneClass;
 import Solutions.reverseWordsClass;
 import Solutions.strStrClass;
@@ -19,6 +20,7 @@ import Solutions.toHexClass;
 
 public class main {
     public static void main(String[] args) {
+        System.out.println("Current JVM version - " + System.getProperty("java.version"));
         new accountBalanceAfterPurchaseClass();
         new convertToTitleClass();
         new deleteDuplicatesClass();
@@ -37,6 +39,7 @@ public class main {
         new reverseWordsClass();
         new strStrClass();
         new toHexClass();
+        new numComponentsClass();
 
         System.out.println("Completed all the tests");
     }
