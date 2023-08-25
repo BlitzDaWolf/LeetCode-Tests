@@ -160,8 +160,9 @@ public class Solution {
 
     public int strStr(String haystack, String needle) {
         if (needle .length() > haystack.length()) return -1;
+        if (!haystack.contains(needle)) return -1;
         int p = -1;
-        for (int i = 0; i < haystack.length()- needle.length();i++){
+        for (int i = 0; i < haystack.length();i++){
             boolean done = true;
             for (int j = 0; j < needle.length();j++){
                 if (haystack.charAt(i+j) != needle.charAt(j)){
@@ -175,5 +176,23 @@ public class Solution {
             }
         }
         return p;
+    }
+
+    public String mergeAlternately(String word1, String word2) {
+        int max1 = word1.length(), max2 = word2.length();
+        int inx1 = 0, inx2 = 0;
+        String result = "";
+        while (result.length() != max1 + max2){
+            if (inx1 == inx2){
+                if (inx1 < max1)
+                    result += word1.charAt(inx1);
+                inx1++;
+            }else{
+                if (inx2 < max2)
+                    result += word2.charAt(inx2);
+                inx2++;
+            }
+        }
+        return result;
     }
 }

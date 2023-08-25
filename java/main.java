@@ -19,6 +19,10 @@ public class main {
         sln.strStr("aaa", "aaaa");
         sln.strStr("a", "a");
 
+        sln.mergeAlternately("abc", "pqr");
+        sln.mergeAlternately("ab", "pqrs");
+        sln.mergeAlternately("abcd", "pq");
+
         System.out.println("Completed all the tests");
     }
 }
