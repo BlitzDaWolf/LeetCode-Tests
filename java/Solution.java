@@ -208,4 +208,8 @@ public class Solution {
 
         return String.join(" ", res);
     }
+
+    public int accountBalanceAfterPurchase(int purchaseAmount) {
+        return purchaseAmount - Math.round(purchaseAmount / 10f) * 10;
+    }
 }
