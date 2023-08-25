@@ -23,6 +23,8 @@ public class main {
         sln.mergeAlternately("ab", "pqrs");
         sln.mergeAlternately("abcd", "pq");
 
+        sln.reverseWords("the sky is blue");
+
         System.out.println("Completed all the tests");
     }
 }
