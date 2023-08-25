@@ -11,6 +11,9 @@ public class main {
         sln.convertToTitle(28);        
         sln.convertToTitle(701);
 
+        sln.isInterleave("aa", "ab", "aaba");
+        sln.isInterleave("aabcc", "dbbca", "aadbbbaccc");
+
         System.out.println("Completed all the tests");
     }
 }
