@@ -1,4 +1,3 @@
-import java.io.Console;
 import java.util.ArrayList;
 import java.util.Arrays;
 import java.util.List;
@@ -157,5 +156,24 @@ public class Solution {
         }
 
         return dp[n];
+    }
+
+    public int strStr(String haystack, String needle) {
+        if (needle .length() > haystack.length()) return -1;
+        int p = -1;
+        for (int i = 0; i < haystack.length()- needle.length();i++){
+            boolean done = true;
+            for (int j = 0; j < needle.length();j++){
+                if (haystack.charAt(i+j) != needle.charAt(j)){
+                    done = false;
+                    break;
+                }
+            }
+            if ( done){
+                p = i;
+                break;
+            }
+        }
+        return p;
     }
 }

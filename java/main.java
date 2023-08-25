@@ -14,6 +14,11 @@ public class main {
         sln.isInterleave("aa", "ab", "aaba");
         sln.isInterleave("aabcc", "dbbca", "aadbbbaccc");
 
+        sln.strStr("sadbutsad", "sad");
+        sln.strStr("leetcode", "leeto");
+        sln.strStr("aaa", "aaaa");
+        sln.strStr("a", "a");
+
         System.out.println("Completed all the tests");
     }
 }
