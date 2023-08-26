@@ -2,6 +2,7 @@ import Solutions.accountBalanceAfterPurchaseClass;
 import Solutions.convertToTitleClass;
 import Solutions.deleteDuplicatesClass;
 import Solutions.findDuplicateClass;
+import Solutions.findLongestChainClass;
 import Solutions.findMinClass;
 import Solutions.fizzBuzzClass;
 import Solutions.isInterleaveClass;
@@ -40,6 +41,7 @@ public class main {
         new strStrClass();
         new toHexClass();
         new numComponentsClass();
+        new findLongestChainClass();
 
         System.out.println("Completed all the tests");
     }
