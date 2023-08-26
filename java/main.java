@@ -6,6 +6,7 @@ import Solutions.findLongestChainClass;
 import Solutions.findMinClass;
 import Solutions.fizzBuzzClass;
 import Solutions.isInterleaveClass;
+import Solutions.isPalindromeClass;
 import Solutions.lengthOfLastWordClass;
 import Solutions.longestCommonPrefixClass;
 import Solutions.maxAreaClass;
@@ -42,6 +43,7 @@ public class main {
         new toHexClass();
         new numComponentsClass();
         new findLongestChainClass();
+        new isPalindromeClass();
 
         System.out.println("Completed all the tests");
     }
