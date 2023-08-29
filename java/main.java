@@ -12,6 +12,7 @@ import Solutions.lengthOfLastWordClass;
 import Solutions.longestCommonPrefixClass;
 import Solutions.maxAreaClass;
 import Solutions.maxProfitClass;
+import Solutions.maxSubArrayClass;
 import Solutions.mergeAlternatelyClass;
 import Solutions.mergeTwoListsClass;
 import Solutions.mySqrtClass;
@@ -48,6 +49,7 @@ public class main {
         new isPalindromeClass();
         new bestClosingTimeClass();
         new reverseBitsClass();
+        new maxSubArrayClass();
 
         System.out.println("Completed all the tests");
     }
