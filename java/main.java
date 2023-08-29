@@ -17,6 +17,7 @@ import Solutions.mergeTwoListsClass;
 import Solutions.mySqrtClass;
 import Solutions.numComponentsClass;
 import Solutions.plusOneClass;
+import Solutions.reverseBitsClass;
 import Solutions.reverseWordsClass;
 import Solutions.strStrClass;
 import Solutions.toHexClass;
@@ -46,6 +47,7 @@ public class main {
         new findLongestChainClass();
         new isPalindromeClass();
         new bestClosingTimeClass();
+        new reverseBitsClass();
 
         System.out.println("Completed all the tests");
     }
