@@ -1,4 +1,5 @@
 import Solutions.accountBalanceAfterPurchaseClass;
+import Solutions.bestClosingTimeClass;
 import Solutions.convertToTitleClass;
 import Solutions.deleteDuplicatesClass;
 import Solutions.findDuplicateClass;
@@ -44,6 +45,7 @@ public class main {
         new numComponentsClass();
         new findLongestChainClass();
         new isPalindromeClass();
+        new bestClosingTimeClass();
 
         System.out.println("Completed all the tests");
     }
