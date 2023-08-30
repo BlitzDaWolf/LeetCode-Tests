@@ -19,6 +19,7 @@ import Solutions.mySqrtClass;
 import Solutions.numComponentsClass;
 import Solutions.plusOneClass;
 import Solutions.reverseBitsClass;
+import Solutions.reverseListClass;
 import Solutions.reverseWordsClass;
 import Solutions.strStrClass;
 import Solutions.toHexClass;
@@ -50,6 +51,7 @@ public class main {
         new bestClosingTimeClass();
         new reverseBitsClass();
         new maxSubArrayClass();
+        new reverseListClass();
 
         System.out.println("Completed all the tests");
     }
